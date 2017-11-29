@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
     android:background="@android:color/darker_gray"
+    android:gravity="center_vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -18,15 +18,16 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/leftTeamName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
             android:padding="16dp"
             android:text="Team A"
             android:textAllCaps="true"
             android:textColor="#616161"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif-condensed"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/team_a_score"
@@ -35,8 +36,8 @@
             android:layout_gravity="center"
             android:padding="24dp"
             android:text="0"
-            android:textSize="60sp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:textSize="60sp" />
 
         <Button
             android:layout_width="match_parent"
@@ -62,20 +63,21 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/rightTeamName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
             android:padding="16dp"
             android:text="Team B"
             android:textAllCaps="true"
             android:textColor="#616161"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif-condensed"/>
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/team_b_score"
@@ -84,8 +86,8 @@
             android:layout_gravity="center"
             android:padding="24dp"
             android:text="0"
-            android:textSize="60sp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:textSize="60sp" />
 
         <Button
             android:layout_width="match_parent"
@@ -115,17 +117,17 @@
     <View
         android:layout_width="1dp"
         android:layout_height="wrap_content"
-        android:background="#616161"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:background="#616161" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Resset"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="40dp"
-        android:onClick="reset"/>
+        android:onClick="reset"
+        android:text="Resset" />
 
 
 </RelativeLayout>
